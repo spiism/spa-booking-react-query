@@ -32,6 +32,7 @@
     "simple-import-sort",
     "prettier"
   ],
+
   "env": {
     "browser": true,
     "node": true,
@@ -39,6 +40,9 @@
     "jest": true
   },
   "rules": {
+    "prettier/prettier": ["error", {}, {
+      "usePrettierrc": false
+    }],
     "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
     "testing-library/await-async-query": "error",
     "testing-library/no-await-sync-query": "error",
@@ -64,7 +68,7 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/no-array-index-key": "off",
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": "error",
+
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-curly-newline": "off"
   }

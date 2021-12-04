@@ -20,7 +20,6 @@
     "dayjs": "^1.10.4",
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^6.15.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest-dom": "^3.2.4",
@@ -67,5 +66,8 @@
   },
   "jest": {
     "resetMocks": false
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0"
   }
 }
