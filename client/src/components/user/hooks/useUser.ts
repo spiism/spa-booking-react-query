@@ -58,7 +58,7 @@ export function useUser(): UseUser {
     // clearStoredUser();
     // TODO: reset user to null in query client
     queryClient.setQueryData(queryKeys.user, null);
-    queryClient.removeQueries("user-appointments");
+    queryClient.removeQueries(["queryKeys.appointments, queryKeys.user"]);
   }
 
   return { user, updateUser, clearUser };
