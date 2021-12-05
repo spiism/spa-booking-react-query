@@ -30,6 +30,7 @@ export function useUser(): UseUser {
   const queryClient = useQueryClient();
   // TODO: call useQuery to update user data from server
   const { data: user } = useQuery(queryKeys.user, () => getUser(user), {
+    initialData: getStoredUser,
     onSuccess: (received: User | null) => {
       if (!received) {
         clearStoredUser();
